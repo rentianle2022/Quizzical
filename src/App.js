@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./components/Home";
+import QuestionList from "./components/QuestionList";
 
-function App() {
+export default function App() {
+
+  const [start, setStart] = React.useState(false)
+
+  function startQuiz() {
+    setStart(true)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" relative overflow-hidden bg-gray ">
+      <img src="./images/blob1.png" className="absolute -left-36 -bottom-36" />
+      <img src="./images/blob2.png" className="absolute -right-36 -top-36" />
+      
+      {start ? <QuestionList /> : <Home startQuiz={startQuiz} />}
     </div>
   );
 }
-
-export default App;
