@@ -5,7 +5,7 @@ Created with React + TailwindCSS
 ### **Features**
 
 - Fetch random 10 questions from https://opentdb.com/api.php?amount=10 for each quiz
-- count the right answers, colered the right answers in green and wrong answers in red after submited
+- count the right answers, colered the right answers in green and wrong answers in red after submitted
 
 ### Screen Shots
 ![1647765479(1)](https://user-images.githubusercontent.com/75669365/159154727-fa3195cb-91c9-438e-83de-7e09efb58b2a.png)
